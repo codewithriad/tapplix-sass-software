@@ -20,8 +20,8 @@ export default function ContactSection() {
           <div className="space-y-6">
             <HotlineItem
               icon={<Phone />}
-              value="+90-737 621 432"
-              link="tel:+90737621432"
+              value="+1 (305) 986-6855"
+              link="tel:+13059866855"
             />
             <HotlineItem
               icon={<Mail />}
