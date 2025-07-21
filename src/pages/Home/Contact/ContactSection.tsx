@@ -17,11 +17,6 @@ export default function ContactSection() {
             description="Ready to bring your idea to life? Whether you're launching a new digital product, scaling your team, or exploring AI-powered solutions, we're here to help you take the next step with clarity and confidence."
           />
 
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold text-white">Your Success Starts Here!</h2>
-            <p className="text-base text-gray-300">Tell us about your goals. We’ll reach out to schedule a free discovery call.</p>
-          </div>
-
           <div className="space-y-6">
             <HotlineItem
               icon={<Phone />}
