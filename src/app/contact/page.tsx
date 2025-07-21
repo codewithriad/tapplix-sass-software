@@ -5,7 +5,7 @@ import ContactSection from "@/pages/Home/Contact/ContactSection";
 import { MapPin, Clock } from "lucide-react";
 
 
-export default function ContactPage() {
+const page = () => {
   return (
     <section id="contact" className="pt-20 scroll-mt-16 bg-white dark:bg-gray-950">
 
@@ -61,3 +61,4 @@ export default function ContactPage() {
     </section>
   );
 }
+export default page

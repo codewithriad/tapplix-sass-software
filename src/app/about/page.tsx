@@ -15,7 +15,7 @@ const page = () => {
 
   return (
     <>
-    <PageHero page={aboutPage} title={aboutTitle} />
+      <PageHero page={aboutPage} title={aboutTitle} />
       <TeamSection />
       <Expertise />
       <WorkingProcess />

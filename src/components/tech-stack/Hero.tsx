@@ -21,7 +21,7 @@ const Hero = () => {
                 {/* Breadcrumb */}
                 <div className="mb-4 w-full md:w-auto">
                     <div className="flex justify-center items-center gap-1 px-4 py-2 border border-white/20 text-white/70 rounded-full backdrop-blur-md text-sm">
-                        <Link href="/" className="text-blue-500 font-semibold">HOME</Link> <span>— Tech Stack</span>
+                        <Link href="/" className="text-green-500 font-bold">HOME</Link> — <span className="text-amber-400">Tech Stack</span>
                     </div>
                 </div>
 
