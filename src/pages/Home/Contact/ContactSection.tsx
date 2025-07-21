@@ -29,11 +29,10 @@ export default function ContactSection() {
               link="mailto:info@tapplix.tech"
             />
           </div>
-
           <SocialList />
         </div>
 
-        {/* Right Section */}
+        {/* Right Section : contact form */}
         <div className="mt-10 lg:mt-0">
           <ContactForm />
         </div>
