@@ -2,11 +2,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Phone, MapPin, Send, ArrowUp } from "lucide-react";
 import Image from "next/image";
+import ClutchReview from "./ClutchReview";
+import Link from "next/link";
 
 const Footer = () => {
+
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
 
   return (
     <footer className="bg-slate-50 dark:bg-black pt-16 pb-8">
@@ -48,7 +53,7 @@ const Footer = () => {
               <div className="text-sm text-blue-500 font-medium mb-2">
                 ✦ THEY TOLD ABOUT ✦
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200 my-4">
                 What Sets Us Apart
               </h2>
               <p className="text-gray-600 dark:text-white leading-relaxed">
@@ -60,15 +65,8 @@ const Footer = () => {
             </div>
 
             {/* Clutch Review */}
-            <div className="text-center lg:text-left">
-              <div className="text-sm text-gray-600 dark:text-white mb-1">Review On</div>
-              <div className="flex items-center justify-center lg:justify-start">
-                <span className="font-bold text-gray-900 dark:text-white mr-2">Clutch</span>
-                <div className="flex text-orange-400">
-                  <span>★★★★</span>
-                  <span className="text-gray-300">★</span>
-                </div>
-              </div>
+            <div>
+              <ClutchReview/>
             </div>
           </div>
         </div>
@@ -86,13 +84,13 @@ const Footer = () => {
                   Call Any Time
                 </div>
                 <div className="text-gray-900 dark:text-white font-semibold">
-                  1 (800) 342-0989
+                 +1 (305) 986-6855
                 </div>
               </div>
             </div>
 
             {/* Address */}
-            <div className="flex items-center justify-center md:justify-start space-x-3">
+            <Link href={'/contact'} className="flex items-center justify-center md:justify-start space-x-3">
               <div className="p-2 bg-blue-100 rounded-full">
                 <MapPin className="h-5 w-5 text-blue-600" />
               </div>
@@ -102,7 +100,7 @@ const Footer = () => {
                   1680 Michigan Ave Suite#700 Miami Beach, FL 33139
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Email */}
             <div className="flex items-center justify-center md:justify-start space-x-3">

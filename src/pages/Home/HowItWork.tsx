@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -88,50 +87,37 @@ const HowItWorks = () => {
         </div>
 
         {/* Swiper Section */}
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          loop
-          spaceBetween={32}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="w-full"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full">
           {steps.map((step, index) => (
-            <SwiperSlide key={index}>
-              <div className="group h-full border-t-4 border-transparent hover:border-blue-600 pt-10 px-6 pb-8 rounded-xl bg-white dark:bg-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300">
-                <div className="flex flex-col h-full items-start space-y-4">
-                  <div className="bg-blue-50 dark:bg-blue-900 rounded-full p-3">
-                    <Image
-                      src={step.icon}
-                      alt={step.title}
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 transition">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {step.description}
-                  </p>
-                  <ul className="text-gray-700 dark:text-gray-400 list-disc list-inside space-y-1 mt-auto">
-                    {step.points.map((point, i) => (
-                      <li key={i}>{point}</li>
-                    ))}
-                  </ul>
+            <div
+              key={index}
+              className="group h-full border-t-4 border-transparent hover:border-blue-600 pt-10 px-6 pb-8 rounded-xl bg-white dark:bg-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.05)] hover:shadow-lg transition-all duration-300"
+            >
+              <div className="flex flex-col h-full items-start space-y-4">
+                <div className="bg-blue-50 dark:bg-blue-900 rounded-full p-3">
+                  <Image
+                    src={step.icon}
+                    alt={step.title}
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 transition">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {step.description}
+                </p>
+                <div className="text-gray-700 dark:text-gray-400 list-disc list-inside space-y-1 mt-auto">
+                  {step.points.map((point, i) => (
+                    <p key={i} className="flex items-center justify-start gap-2"><Check/> {point}</p>
+                  ))}
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </div>
+
       </div>
     </section>
   );

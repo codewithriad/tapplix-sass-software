@@ -19,11 +19,6 @@ const teamMembers = [
     title: "Chief Product Officer",
     image: "/team/netsan.jpg",
   },
-  {
-    name: "Ali Hamza",
-    title: "Team Lead AI Engineer",
-    image: "/team/ali.jpg",
-  },
 ];
 
 export default function TeamSection() {

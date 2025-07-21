@@ -75,7 +75,7 @@ const Navbar = () => {
                 <div className="text-xs text-gray-500 dark:text-gray-400">
                   Any Question:
                 </div>
-                <div className="font-semibold">+90-737 621 432</div>
+                <div className="font-semibold">+1 (305) 986-6855</div>
               </div>
             </div>
           </div>

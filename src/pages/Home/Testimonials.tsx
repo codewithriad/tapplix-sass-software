@@ -2,11 +2,13 @@
 
 import "swiper/css";
 import "swiper/css/effect-fade";
-import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import TestimonialCardV2 from "@/components/shared/TestimonialCard";
+import ClutchReview from "@/components/shared/ClutchReview";
+import GoogleReview from "@/components/shared/GoogleReview";
+import Link from "next/link";
 
 export default function Testimonials() {
   const testimonials = [
@@ -46,39 +48,31 @@ export default function Testimonials() {
 
   return (
     <section className="py-20 bg-indigo-50 dark:bg-gray-950 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6">
+      <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6">
         {/* Left Side */}
         <div className="space-y-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             What Our Clients Are Saying
           </h2>
-          <p className="text-zinc-700 dark:text-zinc-300 text-lg sm:text-xl">
-            Real stories from real teams we’ve helped scale, innovate, and succeed. At Tapplix, we don’t just deliver solutions — we build long-term partnerships.
+          <p className="text-zinc-700 dark:text-zinc-300 text-lg sm:text-xl leading-[inherit]">
+            Real stories from real teams we’ve helped scale, innovate, and succeed. At Tapplix, we don’t just deliver solutions, we build long-term partnerships.
+          </p>
+
+          <p className="text-zinc-700 dark:text-zinc-300 text-lg sm:text-xl leading-[inherit]">
+            I am wondering if there is a way to add case study pages on our website based on our reviews on <Link href={'http://Clutch.co'} className="text-blue-600 underline" target="_blank">Clutch.co</Link>
           </p>
 
           {/* Reviewed Brands */}
           <div className="flex gap-12 flex-wrap mt-6">
             {/* Clutch */}
             <div className="border-r-2 border-neutral-400/50 pr-10 dark:border-neutral-600/50">
-              <h4 className="text-gray-700 dark:text-gray-300 font-semibold mb-2 text-sm">Review On</h4>
-              <Image
-                src="/icons/clutch-1.png"
-                alt="Clutch"
-                width={60}
-                height={40}
-                className="mb-2"
-              />
+
+              <ClutchReview />
             </div>
 
             {/* Google */}
             <div>
-              <h4 className="text-gray-700 dark:text-gray-300 font-semibold mb-2 text-sm">Review On</h4>
-              <Image
-                src="/icons/google.png"
-                alt="Google"
-                width={60}
-                height={20}
-              />
+              <GoogleReview />
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 import Link from "next/link";
 
 const BannerSection = () => {
@@ -20,14 +21,14 @@ const BannerSection = () => {
       subheading: "Mobility tech | ai + web3",
       heading: "Ride share Reinvented: The CocheVia Platform",
       desc: "This case study reveals how Tapplix built CocheVia, an AI-powered, driver-first ride share platform with integrated Web3, AI, and advanced mobility for all users.",
-      link: "https://councils.forbes.com/profile/Morgan-Shuler-Founder-Chief-Technology-Officer-Tapplix-Applications-Web-Design/c7ba1203-6c48-4c60-bc5c-d8cdecfe27c5",
+      link: "http://cochevia.com",
     },
     {
       image: "/Home/2.jpg",
       subheading: "ai platform | culture-first intelligence",
       heading: "Building Culturally Fluent AI: The Ebonix Experience",
       desc: "This case study explores how Tapplix brought Ebonix AI to life,a generative AI platform designed to reflect diverse cultural identities. Built using GPT-2, TensorFlow, Hugging Face and a custom prompt engine.",
-      link: "https://councils.forbes.com/profile/Morgan-Shuler-Founder-Chief-Technology-Officer-Tapplix-Applications-Web-Design/c7ba1203-6c48-4c60-bc5c-d8cdecfe27c5",
+      link: "http://ebonix.ai",
     },
   ];
   return (
@@ -75,12 +76,6 @@ const BannerSection = () => {
                   custom-built software, AI-driven innovation, and expert
                   insight published on Forbes Technology Council.
                 </p>
-                <Link
-                  href="https://councils.forbes.com/profile/Morgan-Shuler-Founder-Chief-Technology-Officer-Tapplix-Applications-Web-Design/c7ba1203-6c48-4c60-bc5c-d8cdecfe27c5" target="_blank"
-                  className="bg-blue-500 text-white text-base font-semibold rounded px-4 py-2 inline-flex items-center justify-center hover:bg-blue-600 transition w-40 h-12"
-                >
-                  View All Stories
-                </Link>
               </div>
             </div>
           </div>
@@ -90,10 +85,16 @@ const BannerSection = () => {
       {/* Right Side - Swiper with 2 Cards at a time */}
       <div className="lg:col-span-7 xl:col-span-8 px-4 md:px-6 lg:px-10 bg-black">
         <Swiper
+          modules={[Autoplay]}
           spaceBetween={24}
           slidesPerView={1}
+          speed={800} // 👈 Smooth slide duration (ms)
           breakpoints={{
             768: { slidesPerView: 2 },
+          }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
           }}
         >
           {cardData.map((card, index) => (
@@ -116,7 +117,7 @@ const BannerSection = () => {
                   <p className="text-base text-gray-600 dark:text-gray-300 mb-6">
                     {card.desc}
                   </p>
-                  <Link href={card.link} target="_blank" className="mt-auto text-blue-600 hover:underline text-sm font-semibold">
+                  <Link href={card.link} target="_blank" className="mt-auto text-blue-600 hover:underline text-sm font-semibold max-w-fit">
                     <button>
                       Learn More →
                     </button>

@@ -14,8 +14,8 @@ export default function SectionTitle({ label, title, description }: SectionTitle
         {label}
        <Image src='/icons/gray-star.png' width={15} height={15} alt="sub-title" />
        </div>
-      <h2 className="text-2xl sm:text-3xl font-bold text-white">{title}</h2>
-      <p className="mt-3 text-gray-300">{description}</p>
+      <h2 className="text-2xl sm:text-4xl font-bold text-white">{title}</h2>
+      <p className="mt-3 text-gray-300 leading-[1.7rem]">{description}</p>
     </div>
   );
 }

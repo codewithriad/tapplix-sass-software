@@ -23,7 +23,7 @@ const PageHero = ({title,page}:HeroProps) => {
             <div className="z-10 mb-4 px-4 mr-auto ml-[12%]">
                 <div className=" px-4 py-1 border border-white/20 text-base
                  text-white/70 rounded-full backdrop-blur-md">
-                    <Link href={'/'} className="text-blue-500 font-semibold">HOME</Link> — {page}
+                    <Link href={'/'} className="text-blue-500 font-semibold"><span className="text-green-500">HOME</span></Link> — <span className="text-amber-400">{page}</span>
                 </div>
             </div>
 

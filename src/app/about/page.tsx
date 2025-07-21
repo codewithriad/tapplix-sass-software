@@ -9,13 +9,13 @@ import PageHero from '@/components/shared/PageHero';
 
 const page = () => {
 
-  const abooutTitle = 'Top Software Development Company in Miami | Custom Web & App Solutions';
+  const aboutTitle = 'Top Software Development Company in Miami | Custom Web & App Solutions';
   const aboutPage = 'About Us';
 
 
   return (
     <>
-    <PageHero page={aboutPage} title={abooutTitle} />
+    <PageHero page={aboutPage} title={aboutTitle} />
       <TeamSection />
       <Expertise />
       <WorkingProcess />

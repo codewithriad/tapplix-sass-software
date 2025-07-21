@@ -46,7 +46,7 @@ const Expertise = () => {
               Top Software Development Company in Miami | Custom Web & App Solutions
             </h2>
             <p className="text-gray-600 dark:text-gray-200 text-base sm:text-lg leading-relaxed text-center lg:text-left">
-              Where innovation meets passion in a journey that started with a simple idea and a shared dream. Founded in recent year we embarked on a mission to bring the new innovation and introduce the technology. From humble beginnings to our current aspirations, every step has been fueled by a relentless commitment.
+              Where innovation meets passion in a journey that started with a simple idea and a shared dream. Founded in recent years we embarked on a mission to bring the new innovation and introduce the technology. From humble beginnings to our current aspirations, every step has been fueled by a relentless commitment.
             </p>
           </div>
 
