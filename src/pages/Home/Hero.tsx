@@ -20,11 +20,12 @@ const Hero = () => {
   ];
 
   const marqueeItems = [
-    "BUILT FOR USERS, DESIGNED TO WIN",
-    "YOUR TECH. OUR TALENT. ONE VISION",
     "MOBILE FIRST",
     "HUMAN-CENTERED DESIGN",
     "SMART CODE THAT DELIVERS",
+    "SCALE FAST WITH CONFIDENCE",
+    "BUILT FOR USERS, DESIGN TO WIN",
+    "YOUR TECH. OUR TALENT. ONE VISION"
   ];
 
   return (
@@ -48,14 +49,11 @@ const Hero = () => {
 
               <div className="space-y-6">
                 <h1 className="text-4xl lg:text-[58px] leading-[initial] font-bold text-gray-900 dark:text-white">
-                  Build Smarter. Scale Faster. Tap Into Tomorrow.
+                  Tap Into Tomorrow with Cutting-Edge Technology
                 </h1>
 
                 <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Technology moves fast. So should you. At Tapplix, we help bold
-                  startups and future-focused companies launch scalable
-                  software, integrate AI, and solve big challenges with smart
-                  code and smarter strategy.
+                  Technology is evolving at breakneck speed, and businesses that fail to adapt risk being left behind. We don&apos;t just help up—we push then ahead with game-changing Ai solutions, enterprise-grade software, and intelligent automation that transform the way they work, operate, and innovate.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
