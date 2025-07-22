@@ -21,11 +21,11 @@ const TestimonialCardV2 = ({
   brandLogo,
 }: TestimonialCardV2Props) => {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col justify-between h-full w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
-      <span className="text-sm font-semibold text-indigo-600 mb-2">
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md flex flex-col justify-between h-full w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+      <span className="text-sm font-semibold text-indigo-600 dark:text-blue-500 mb-2">
         {title}!
       </span>
-      <p className="text-lg text-gray-600 italic mb-6">“{desc}”</p>
+      <p className="text-lg text-gray-600 dark:text-gray-300 italic mb-6">“{desc}”</p>
 
       {/* Bottom area: Author and Brand */}
       <div className="flex items-center justify-between">
@@ -41,8 +41,8 @@ const TestimonialCardV2 = ({
             />
           </div>
           <div>
-            <h6 className="font-semibold text-gray-900">{authorName}</h6>
-            <span className="text-sm text-gray-500">{authorRole}</span>
+            <h6 className="font-semibold text-gray-900 dark:text-white">{authorName}</h6>
+            <span className="text-sm text-gray-500 dark:text-gray-400">{authorRole}</span>
           </div>
         </div>
 
