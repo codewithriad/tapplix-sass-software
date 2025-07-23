@@ -84,7 +84,7 @@ const Footer = () => {
                   Call Any Time
                 </div>
                 <div className="text-gray-900 dark:text-white font-semibold">
-                 +1 (305) 986-6855
+                 +1 (800) 342-0989
                 </div>
               </div>
             </div>

@@ -95,7 +95,7 @@ const Navbar = () => {
                 <div className="text-xs text-gray-500 dark:text-gray-400">
                   Any Question:
                 </div>
-                <div className="font-semibold">+1 (305) 986-6855</div>
+                <div className="font-semibold">+1 (800) 342-0989</div>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ const Navbar = () => {
                     <Phone className="h-4 w-4" />
                     <div className="text-sm">
                       <div className="text-xs text-gray-500 dark:text-gray-400">Any Question:</div>
-                      <div className="font-semibold">+1 (305) 986-6855</div>
+                      <div className="font-semibold">+1 (800) 342-0989</div>
                     </div>
                   </div>
                 </div>
