@@ -13,9 +13,18 @@ import Link from "next/link";
 export default function Testimonials() {
   const testimonials = [
     {
+    authorName: "Alice Smith",
+    authorRole: "CTO, StartupX",
+    authorImage: "/testimonials/client1.png",
+    brandLogo: "/testimonials/clutch.png",
+     
+    desc: "Tapplix is a true innovation partner — blending deep tech skills with smart strategy. Their team delivers fast, future-ready solutions from MVP to scale, with clear communication and a lean, agile approach.",
+    title: "Great Digital Marketing!",
+  },
+     {
       authorName: "Alice Smith",
       authorRole: "CTO, StartupX",
-      authorImage: "/testimonials/client1.png",
+      authorImage: "/testimonials/client4.png",
       brandLogo: "/testimonials/b1.jpg",
       desc: "The line's length and style can be changed to better fit your document's general layout and style. Stars, dashes, or even a graphical element are some other divider alternatives.",
       title: "Great Digital Marketing!",

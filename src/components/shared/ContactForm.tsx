@@ -21,8 +21,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(form);
-    // 🔗 Submit logic here (API call, etc.)
+    
   };
 
   return (
