@@ -1,6 +1,5 @@
 import SectionTitle from "./SectionTitle";
 import HotlineItem from "./HotlineItem";
-import SocialList from "./SocialList";
 import { Mail, Phone } from "lucide-react";
 import ContactForm from "@/components/shared/ContactForm";
 // import your SVGs as components or use icon libraries
@@ -29,7 +28,6 @@ export default function ContactSection() {
               link="mailto:info@tapplix.tech"
             />
           </div>
-          <SocialList />
         </div>
 
         {/* Right Section : contact form */}

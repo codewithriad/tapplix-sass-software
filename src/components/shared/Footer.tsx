@@ -127,18 +127,7 @@ const Footer = () => {
             Design By <span className="font-semibold">Tapplix</span>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm text-gray-600 dark:text-white">
-            <a href="#" className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-              Support Policy
-            </a>
-            <a href="#" className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-              Terms & Conditions
-            </a>
-            <a href="#" className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
-              Privacy Policy
-            </a>
-          </div>
+          
         </div>
 
         {/* Scroll to Top Button */}

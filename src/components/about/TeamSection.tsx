@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+
 import { FaFacebookF, FaTwitter, FaPinterestP, FaInstagram } from "react-icons/fa";
 
 const teamMembers = [
@@ -36,11 +36,12 @@ export default function TeamSection() {
           <p className="text-gray-600 dark:text-gray-200 text-lg max-w-[80%]">
             At Tapplix, our leadership team brings together an abundance of expertise in software engineering, UX strategy, AI innovation, and business development.
           </p>
-          <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 border border-gray-400 dark:bg-blue-300 rounded-full font-medium hover:bg-blue-500 hover:text-white transition">
-            <button>
-              Join Our Team <span className="ml-2">↘</span>
-            </button>
-          </Link>
+          <a
+            href="mailto:info@tapplix.tech?subject=Join%20Our%20Team&body=Hi%20Tapplix%20Team%2C%0A%0AI%20would%20like%20to%20join%20your%20team!"
+            className="inline-flex items-center justify-center px-6 py-3 border border-gray-400 dark:bg-blue-300 rounded-full font-medium hover:bg-blue-500 hover:text-white transition"
+          >
+            Join Our Team <span className="ml-2">↘</span>
+          </a>
         </div>
 
         {/* Right Content */}
@@ -48,7 +49,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.name}
-             className="group min-h-[380px] min-w-[300px] w-full sm:w-full md:w-full lg:w-[320px] bg-white dark:bg-black rounded-[500px_500px_10px_10px] border border-[#1212121a] shadow-sm transition-all duration-300 overflow-hidden relative hover:rounded-tl-[20px] hover:rounded-tr-[20px] mx-auto"
+              className="group min-h-[380px] min-w-[300px] w-full sm:w-full md:w-full lg:w-[320px] bg-white dark:bg-black rounded-[500px_500px_10px_10px] border border-[#1212121a] shadow-sm transition-all duration-300 overflow-hidden relative hover:rounded-tl-[20px] hover:rounded-tr-[20px] mx-auto"
             >
               {/* Top Image Section */}
               <div className="relative w-full h-[280px] sm:h-[280px] md:h-[300px]">

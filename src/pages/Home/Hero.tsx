@@ -51,15 +51,12 @@ const Hero = () => {
                 <h1 className="text-4xl lg:text-[58px] leading-[initial] font-bold text-gray-900 dark:text-white">
                   Tap Into Tomorrow with Cutting-Edge Technology
                 </h1>
-
-                <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Technology is evolving at breakneck speed, and businesses that fail to adapt risk being left behind. We don&apos;t just help up—we push then ahead with game-changing Ai solutions, enterprise-grade software, and intelligent automation that transform the way they work, operate, and innovate.
-                </p>
-
                 <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-md">
-                    Let&apos;s Talk
-                  </button>
+                  <a href="mailto:info@tapplix.tech?subject=Let%27s%20Work%20Together&body=Hi%20Tapplix%20Team%2C%0A%0AI%20am%20interested%20in%20working%20with%20you!">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-md">
+                      Let&apos;s Talk
+                    </button>
+                  </a>
 
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">

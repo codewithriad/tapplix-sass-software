@@ -46,7 +46,7 @@ const page = () => {
         <div className="lg:col-span-7">
           <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5647631857846!2d90.36311167605992!3d23.83407118555764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52adb88!2sEgens%20Lab!5e0!3m2!1sen!2sbd!4v1700138349574!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.094840725323!2d-80.1412742249051!3d25.792919408129497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b48893c7f63d%3A0x4b1d89859d31b516!2s1680%20Michigan%20Ave%20%23700%2C%20Miami%20Beach%2C%20FL%2033139%2C%20USA!5e0!3m2!1sen!2sbd!4v1721996820411!5m2!1sen!2sbd"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -54,10 +54,11 @@ const page = () => {
             ></iframe>
           </div>
         </div>
+
       </div>
 
       {/* contact form */}
-      <ContactSection/>
+      <ContactSection />
     </section>
   );
 }

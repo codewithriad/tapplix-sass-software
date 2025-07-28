@@ -8,20 +8,20 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import TestimonialCardV2 from "@/components/shared/TestimonialCard";
 import ClutchReview from "@/components/shared/ClutchReview";
 import GoogleReview from "@/components/shared/GoogleReview";
-import Link from "next/link";
+
 
 export default function Testimonials() {
   const testimonials = [
     {
-    authorName: "Alice Smith",
-    authorRole: "CTO, StartupX",
-    authorImage: "/testimonials/client1.png",
-    brandLogo: "/testimonials/clutch.png",
-     
-    desc: "Tapplix is a true innovation partner — blending deep tech skills with smart strategy. Their team delivers fast, future-ready solutions from MVP to scale, with clear communication and a lean, agile approach.",
-    title: "Great Digital Marketing!",
-  },
-     {
+      authorName: "Alice Smith",
+      authorRole: "CTO, StartupX",
+      authorImage: "/testimonials/client1.png",
+      brandLogo: "/testimonials/clutch.png",
+
+      desc: "Tapplix is a true innovation partner — blending deep tech skills with smart strategy. Their team delivers fast, future-ready solutions from MVP to scale, with clear communication and a lean, agile approach.",
+      title: "Great Digital Marketing!",
+    },
+    {
       authorName: "Alice Smith",
       authorRole: "CTO, StartupX",
       authorImage: "/testimonials/client4.png",
@@ -29,14 +29,14 @@ export default function Testimonials() {
       desc: "The line's length and style can be changed to better fit your document's general layout and style. Stars, dashes, or even a graphical element are some other divider alternatives.",
       title: "Great Digital Marketing!",
     },
-    {
-      authorName: "Ryan Lee",
-      authorRole: "Marketing Head, Nova Inc.",
-      authorImage: "/testimonials/client2.png",
-      brandLogo: "/testimonials/b2.jpg",
-      desc: "You can adjust the length and style of the line to match the overall design and formatting of your document. Some other divider options include dashes, stars, or even a graphical element.",
-      title: "Digital Experience Redefined",
-    },
+    // {
+    //   authorName: "Ryan Lee",
+    //   authorRole: "Marketing Head, Nova Inc.",
+    //   authorImage: "/testimonials/client2.png",
+    //   brandLogo: "/testimonials/b2.jpg",
+    //   desc: "You can adjust the length and style of the line to match the overall design and formatting of your document. Some other divider options include dashes, stars, or even a graphical element.",
+    //   title: "Digital Experience Redefined",
+    // },
     {
       authorName: "Sofia Lim",
       authorRole: "Founder, Flow AI",
@@ -67,9 +67,7 @@ export default function Testimonials() {
             Real stories from real teams we’ve helped scale, innovate, and succeed. At Tapplix, we don’t just deliver solutions, we build long-term partnerships.
           </p>
 
-          <p className="text-zinc-700 dark:text-zinc-300 text-lg sm:text-xl leading-[inherit]">
-            I am wondering if there is a way to add case study pages on our website based on our reviews on <Link href={'http://Clutch.co'} className="text-blue-600 underline" target="_blank">Clutch.co</Link>
-          </p>
+
 
           {/* Reviewed Brands */}
           <div className="flex gap-12 flex-wrap mt-6">

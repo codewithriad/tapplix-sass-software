@@ -1,35 +1,35 @@
 import React from 'react'
-import { Brain, Code, Rocket, Handshake } from "lucide-react";
-import { FaEyeLowVision } from 'react-icons/fa6';
+// import { Brain, Code, Rocket, Handshake } from "lucide-react";
+// import { FaEyeLowVision } from 'react-icons/fa6';
 
 const Expertise = () => {
-  const services = [
-    {
-      title: "Consultation & Discovery",
-      description: "We align on your goals and set the vision from Day 1.",
-      icon: <Handshake className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
-    },
-    {
-      title: "Product Strategy",
-      description: "We shape your roadmap to align tech with long-term business growth.",
-      icon: <Brain className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
-    },
-    {
-      title: "Bringing Elite Tech to Your Vision",
-      description: "We specialize in turning complex challenges into comprehensive scalable systems.",
-      icon: <FaEyeLowVision className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
-    },
-    {
-      title: "Custom Development",
-      description: "From React and Node.js to AI integrations—we build full-stack.",
-      icon: <Code className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
-    },
-    {
-      title: "Launch & Growth Planning",
-      description: "We support scaling, monetization, and iterative growth.",
-      icon: <Rocket className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
-    },
-  ];
+  // const services = [
+  //   {
+  //     title: "Consultation & Discovery",
+  //     description: "We align on your goals and set the vision from Day 1.",
+  //     icon: <Handshake className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
+  //   },
+  //   {
+  //     title: "Product Strategy",
+  //     description: "We shape your roadmap to align tech with long-term business growth.",
+  //     icon: <Brain className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
+  //   },
+  //   {
+  //     title: "Bringing Elite Tech to Your Vision",
+  //     description: "We specialize in turning complex challenges into comprehensive scalable systems.",
+  //     icon: <FaEyeLowVision className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
+  //   },
+  //   {
+  //     title: "Custom Development",
+  //     description: "From React and Node.js to AI integrations—we build full-stack.",
+  //     icon: <Code className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
+  //   },
+  //   {
+  //     title: "Launch & Growth Planning",
+  //     description: "We support scaling, monetization, and iterative growth.",
+  //     icon: <Rocket className="w-10 h-10 text-gray-500 dark:text-gray-200 mb-4 mx-auto" />,
+  //   },
+  // ];
 
   return (
     <section className="bg-white dark:bg-gray-900">
@@ -84,7 +84,7 @@ const Expertise = () => {
         </div>
 
         {/* Bottom Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 py-4">
+        {/* <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 py-4">
           {services.map((service, index) => (
             <div key={index} className="text-center px-4 py-6 bg-gray-100 dark:bg-gray-800 rounded-xl hover:bg-blue-50 dark:hover:bg-gray-500 transition">
               {service.icon}
@@ -92,7 +92,7 @@ const Expertise = () => {
               <p className="text-gray-600 dark:text-gray-200">{service.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )
