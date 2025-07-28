@@ -9,7 +9,6 @@ interface TestimonialCardV2Props {
   authorName: string;
   authorRole: string;
   authorImg: string | StaticImageData;
-  brandLogo: string | StaticImageData;
 }
 
 const TestimonialCardV2 = ({
@@ -18,7 +17,6 @@ const TestimonialCardV2 = ({
   authorName,
   authorRole,
   authorImg,
-  brandLogo,
 }: TestimonialCardV2Props) => {
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md flex flex-col justify-between h-full w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
@@ -47,7 +45,7 @@ const TestimonialCardV2 = ({
         </div>
 
         {/* Brand logo */}
-        <div className="w-32 h-auto">
+        {/* <div className="w-32 h-auto">
           <Image
             src={brandLogo}
             alt="Brand Logo"
@@ -55,7 +53,7 @@ const TestimonialCardV2 = ({
             height={30}
             className="object-contain"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

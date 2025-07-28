@@ -13,45 +13,27 @@ import GoogleReview from "@/components/shared/GoogleReview";
 export default function Testimonials() {
   const testimonials = [
     {
-      authorName: "Alice Smith",
-      authorRole: "CTO, StartupX",
+      authorName: "Stuart Loggie",
+      authorRole: "CEO & Founder, Cube RE",
       authorImage: "/testimonials/client1.png",
-      brandLogo: "/testimonials/clutch.png",
 
-      desc: "Tapplix is a true innovation partner — blending deep tech skills with smart strategy. Their team delivers fast, future-ready solutions from MVP to scale, with clear communication and a lean, agile approach.",
-      title: "Great Digital Marketing!",
+      desc: "Thanks to Tapplix Applications & Web Design LLC's work, the client noticed a significant increase in user engagement. The app was accessible, and the integration with the backend system improved client satisfaction. The team was proactive, responsive, and timely, ensuring a smooth development process.",
+      title: "Mobile App Dev for Real Estate Company",
     },
     {
-      authorName: "Alice Smith",
-      authorRole: "CTO, StartupX",
+      authorName: "John Herman",
+      authorRole: "CEO & Co-Founder, BERO",
       authorImage: "/testimonials/client4.png",
-      brandLogo: "/testimonials/b1.jpg",
-      desc: "The line's length and style can be changed to better fit your document's general layout and style. Stars, dashes, or even a graphical element are some other divider alternatives.",
-      title: "Great Digital Marketing!",
-    },
-    // {
-    //   authorName: "Ryan Lee",
-    //   authorRole: "Marketing Head, Nova Inc.",
-    //   authorImage: "/testimonials/client2.png",
-    //   brandLogo: "/testimonials/b2.jpg",
-    //   desc: "You can adjust the length and style of the line to match the overall design and formatting of your document. Some other divider options include dashes, stars, or even a graphical element.",
-    //   title: "Digital Experience Redefined",
-    // },
-    {
-      authorName: "Sofia Lim",
-      authorRole: "Founder, Flow AI",
-      authorImage: "/testimonials/client3.png",
-      brandLogo: "/testimonials/b3.jpg",
-      desc: "The line's length and style can be changed to better fit your document's general layout and style. Stars, dashes, or even a graphical element are some other divider alternatives.",
-      title: "Great Consulting!",
+      desc: "Tapplix Applications & Web Design LLC improved the client's operational efficiency, customer insights, and online engagement through their solutions. They impressed the client with their organization, efficiency, and responsiveness. Their deep expertise stood out in the partnership.",
+      title: "AI System Integration for Food & Beverage Company",
     },
     {
-      authorName: "Sofia Lim",
-      authorRole: "Founder, Flow AI",
+      authorName: "George LaPierre",
+      authorRole: "Founder & CEO, Verity",
       authorImage: "/testimonials/client4.png",
-      brandLogo: "/testimonials/b4.jpg",
-      desc: "You can adjust the length and style of the line to match the overall design and formatting of your document. Some other divider options include dashes, stars, or even a graphical element.",
-      title: "Marketing With Results",
+      
+      desc: "With Tapplix Applications & Web Design LLC's solution, the client saw increased operational efficiency and reduced manual mistake rates. The team showcased excellent project management, meeting all milestones within the predetermined budget and responding promptly to the client's requests.",
+      title: "Custom Software Development for Hospitality Company",
     },
   ];
 
@@ -107,7 +89,7 @@ export default function Testimonials() {
                   authorName={t.authorName}
                   authorRole={t.authorRole}
                   authorImg={t.authorImage}
-                  brandLogo={t.brandLogo}
+                  
                 />
               </SwiperSlide>
             ))}
