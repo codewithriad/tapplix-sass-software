@@ -65,10 +65,9 @@ const Hero = () => {
                     <div className="flex items-center gap-2">
                       <span className="font-bold text-gray-900 dark:text-white">Clutch</span>
                       <div className="flex items-center">
-                        {[...Array(4)].map((_, i) => (
+                        {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-4 h-4 text-red-400 fill-red-400" />
                         ))}
-                        <Star className="w-4 h-4 text-red-400 fill-red-400/50" />
                       </div>
                     </div>
                   </div>
