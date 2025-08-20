@@ -42,13 +42,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center m-1">
             <Link href="/">
               <Image
-                src={"/logo.png"}
+                src={theme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
                 width={100}
                 height={40}
                 alt="tapplix-logo"
+                priority
               />
             </Link>
           </div>
