@@ -28,8 +28,7 @@ const ClutchReview = () => {
             </div>
 
             <div className="flex text-orange-400">
-              <span>★★★★</span>
-              <span className="text-gray-300">★</span>
+              <span>★★★★★</span>
             </div>
           </div>
         </div>
