@@ -7,7 +7,6 @@ import Link from "next/link";
 
 const Footer = () => {
 
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -37,12 +36,21 @@ const Footer = () => {
           {/* Center Section - Logo */}
           <div className="flex justify-center items-start">
             <div className="text-center">
+              {/* Light logo */}
               <Image
-                src="/logo.png"
-                alt="Tapplix Logo"
+                src="/logo-light.png"
+                alt="Tapplix Logo Light"
                 width={192}
                 height={48}
                 className="w-48 h-auto mx-auto mb-4 dark:hidden"
+              />
+              {/* Dark logo */}
+              <Image
+                src="/logo-dark.png"
+                alt="Tapplix Logo Dark"
+                width={192}
+                height={48}
+                className="w-48 h-auto mx-auto mb-4 hidden dark:block"
               />
             </div>
           </div>
@@ -66,7 +74,7 @@ const Footer = () => {
 
             {/* Clutch Review */}
             <div>
-              <ClutchReview/>
+              <ClutchReview />
             </div>
           </div>
         </div>
@@ -84,7 +92,7 @@ const Footer = () => {
                   Call Any Time
                 </div>
                 <div className="text-gray-900 dark:text-white font-semibold">
-                 +1 (800) 342-0989
+                  +1 (800) 342-0989
                 </div>
               </div>
             </div>
@@ -127,7 +135,7 @@ const Footer = () => {
             Design By <span className="font-semibold">Tapplix</span>
           </div>
 
-          
+
         </div>
 
         {/* Scroll to Top Button */}
