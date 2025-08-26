@@ -24,8 +24,8 @@ export default function ContactSection() {
             />
             <HotlineItem
               icon={<Mail />}
-              value="info@tapplix.tech"
-              link="mailto:info@tapplix.tech"
+              value="design@tapplix.tech"
+              link="mailto:design@tapplix.tech"
             />
           </div>
         </div>

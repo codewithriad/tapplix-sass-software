@@ -37,7 +37,7 @@ export default function TeamSection() {
             At Tapplix, our leadership team brings together an abundance of expertise in software engineering, UX strategy, AI innovation, and business development.
           </p>
           <a
-            href="mailto:info@tapplix.tech?subject=Join%20Our%20Team&body=Hi%20Tapplix%20Team%2C%0A%0AI%20would%20like%20to%20join%20your%20team!"
+            href="mailto:design@tapplix.tech?subject=Join%20Our%20Team&body=Hi%20Tapplix%20Team%2C%0A%0AI%20would%20like%20to%20join%20your%20team!"
             className="inline-flex items-center justify-center px-6 py-3 border border-gray-400 dark:bg-blue-300 rounded-full font-medium hover:bg-blue-500 hover:text-white transition"
           >
             Join Our Team <span className="ml-2">↘</span>

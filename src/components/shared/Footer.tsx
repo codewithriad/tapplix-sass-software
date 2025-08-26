@@ -120,7 +120,7 @@ const Footer = () => {
                   Say Hello
                 </div>
                 <div className="text-gray-900 dark:text-white font-semibold">
-                  info@tapplix.tech
+                  design@tapplix.tech
                 </div>
               </div>
             </div>

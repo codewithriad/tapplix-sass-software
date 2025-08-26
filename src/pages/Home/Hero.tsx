@@ -52,7 +52,7 @@ const Hero = () => {
                   Tap Into Tomorrow with Cutting-Edge Technology
                 </h1>
                 <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-                  <a href="mailto:info@tapplix.tech?subject=Let%27s%20Work%20Together&body=Hi%20Tapplix%20Team%2C%0A%0AI%20am%20interested%20in%20working%20with%20you!">
+                  <a href="mailto:design@tapplix.tech?subject=Let%27s%20Work%20Together&body=Hi%20Tapplix%20Team%2C%0A%0AI%20am%20interested%20in%20working%20with%20you!">
                     <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg rounded-md">
                       Let&apos;s Talk
                     </button>
