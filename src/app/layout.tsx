@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description: "Built with Next.js, Tailwind CSS, and TypeScript",
   icons: {
-    icon: "/logo-dark.png",
+    icon: "/icon.png",
   }
 };
 
