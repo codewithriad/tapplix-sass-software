@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     template: "%s | Tapplix",
   },
   description: "Built with Next.js, Tailwind CSS, and TypeScript",
+  icons: {
+    icon: "/logo-dark.png"
+  }
 };
 
 export default function RootLayout({
