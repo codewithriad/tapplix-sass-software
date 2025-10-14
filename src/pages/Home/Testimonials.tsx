@@ -3,12 +3,11 @@
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
-import TestimonialCardV2 from "@/components/shared/TestimonialCard";
 import ClutchReview from "@/components/shared/ClutchReview";
 import GoogleReview from "@/components/shared/GoogleReview";
-
+import TestimonialCardV2 from "@/components/shared/TestimonialCard";
+import { Autoplay, EffectFade } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Testimonials() {
   const testimonials = [
@@ -23,15 +22,15 @@ export default function Testimonials() {
     {
       authorName: "John Herman",
       authorRole: "CEO & Co-Founder, BERO",
-      authorImage: "/testimonials/client4.png",
+      authorImage: "/testimonials/client2.png",
       desc: "Tapplix Applications & Web Design LLC improved the client's operational efficiency, customer insights, and online engagement through their solutions. They impressed the client with their organization, efficiency, and responsiveness. Their deep expertise stood out in the partnership.",
       title: "AI System Integration for Food & Beverage Company",
     },
     {
       authorName: "George LaPierre",
       authorRole: "Founder & CEO, Verity",
-      authorImage: "/testimonials/client4.png",
-      
+      authorImage: "/testimonials/client3.png",
+
       desc: "With Tapplix Applications & Web Design LLC's solution, the client saw increased operational efficiency and reduced manual mistake rates. The team showcased excellent project management, meeting all milestones within the predetermined budget and responding promptly to the client's requests.",
       title: "Custom Software Development for Hospitality Company",
     },
@@ -46,16 +45,15 @@ export default function Testimonials() {
             What Our Clients Are Saying
           </h2>
           <p className="text-zinc-700 dark:text-zinc-300 text-lg sm:text-xl leading-[inherit]">
-            Real stories from real teams we’ve helped scale, innovate, and succeed. At Tapplix, we don’t just deliver solutions, we build long-term partnerships.
+            Real stories from real teams we’ve helped scale, innovate, and
+            succeed. At Tapplix, we don’t just deliver solutions, we build
+            long-term partnerships.
           </p>
-
-
 
           {/* Reviewed Brands */}
           <div className="flex gap-12 flex-wrap mt-6">
             {/* Clutch */}
             <div className="border-r-2 border-neutral-400/50 pr-10 dark:border-neutral-600/50">
-
               <ClutchReview />
             </div>
 
@@ -89,7 +87,6 @@ export default function Testimonials() {
                   authorName={t.authorName}
                   authorRole={t.authorRole}
                   authorImg={t.authorImage}
-                  
                 />
               </SwiperSlide>
             ))}
