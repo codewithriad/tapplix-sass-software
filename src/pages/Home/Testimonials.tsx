@@ -65,7 +65,7 @@ export default function Testimonials() {
         </div>
 
         {/* Right Side - Swiper */}
-        <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:w-full h-[340px]">
+        <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:w-full h-fit">
           <Swiper
             modules={[Autoplay, EffectFade]}
             effect="fade"
@@ -74,12 +74,12 @@ export default function Testimonials() {
               disableOnInteraction: false,
             }}
             loop={true}
-            className="w-full h-full"
+            className="w-full h-[420px]"
           >
             {testimonials.map((t, index) => (
               <SwiperSlide
                 key={index}
-                className="flex items-center justify-center h-full px-2 md:px-4"
+                className="flex items-center justify-center h-[420px] px-2 md:px-4"
               >
                 <TestimonialCardV2
                   title={t.title}
