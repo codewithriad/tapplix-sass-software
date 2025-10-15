@@ -1,18 +1,18 @@
 "use client";
 
-import { Star } from "lucide-react";
 import Marquee from "react-fast-marquee";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import ClutchReview from "@/components/shared/ClutchReview";
+import GoogleReview from "@/components/shared/GoogleReview";
+import Image from "next/image";
+import "react-modal-video/css/modal-video.min.css";
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "react-modal-video/css/modal-video.min.css";
-import Image from "next/image";
 
 const Hero = () => {
-
   const heroImages = [
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&auto=format&fit=crop&q=60",
     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&auto=format&fit=crop&q=60",
@@ -25,7 +25,7 @@ const Hero = () => {
     "SMART CODE THAT DELIVERS",
     "SCALE FAST WITH CONFIDENCE",
     "BUILT FOR USERS, DESIGN TO WIN",
-    "YOUR TECH. OUR TALENT. ONE VISION"
+    "YOUR TECH. OUR TALENT. ONE VISION",
   ];
 
   return (
@@ -37,7 +37,12 @@ const Hero = () => {
             {/* Left Text */}
             <div>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
-                {["AI-POWERED SOLUTIONS", "ENTERPRISE SOFTWARE", "WEB DEVELOPMENT", "MOBILE APPS"].map((item, i) => (
+                {[
+                  "AI-POWERED SOLUTIONS",
+                  "ENTERPRISE SOFTWARE",
+                  "WEB DEVELOPMENT",
+                  "MOBILE APPS",
+                ].map((item, i) => (
                   <span
                     key={i}
                     className="px-3 py-1 bg-blue-50 text-blue-600 dark:bg-blue-900 dark:text-blue-300 rounded-full text-sm font-medium"
@@ -58,17 +63,16 @@ const Hero = () => {
                     </button>
                   </a>
 
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">
-                      Review On
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-gray-900 dark:text-white">Clutch</span>
-                      <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-red-400 fill-red-400" />
-                        ))}
-                      </div>
+                  {/* Reviewed Brands */}
+                  <div className="flex gap-12 flex-wrap mt-6">
+                    {/* Clutch */}
+                    <div className="border-r-2 border-neutral-400/50 pr-10 dark:border-neutral-600/50">
+                      <ClutchReview />
+                    </div>
+
+                    {/* Google */}
+                    <div>
+                      <GoogleReview />
                     </div>
                   </div>
                 </div>
@@ -87,17 +91,19 @@ const Hero = () => {
                 >
                   {heroImages.map((img, i) => (
                     <SwiperSlide key={i} className="w-full h-full">
-                      <Image src={img} alt={`Hero ${i + 1}`} fill className="object-cover" />
+                      <Image
+                        src={img}
+                        alt={`Hero ${i + 1}`}
+                        fill
+                        className="object-cover"
+                      />
                     </SwiperSlide>
                   ))}
                 </Swiper>
-
-
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Marquee */}
@@ -106,7 +112,9 @@ const Hero = () => {
           {marqueeItems.map((text, i) => (
             <div key={i} className="flex items-center mx-8">
               <div className="w-2 h-2 bg-blue-400 dark:bg-blue-600 rounded-full mx-4" />
-              <span className="text-lg font-semibold whitespace-nowrap">{text}</span>
+              <span className="text-lg font-semibold whitespace-nowrap">
+                {text}
+              </span>
             </div>
           ))}
         </Marquee>
