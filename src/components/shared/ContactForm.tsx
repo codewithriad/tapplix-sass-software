@@ -21,28 +21,32 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
   };
 
   return (
-    <section className="py-12 px-4 md:px-8 lg:px-16 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto bg-white dark:bg-gray-950 p-6 md:p-10 rounded-xl shadow-md dark:shadow-none border border-gray-200 dark:border-gray-700">
-        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-          Your Success Starts Here!
-        </h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-6">
-          Tell us about your goals. We’ll reach out to schedule a free discovery call.
-        </p>
+    <section className="py-10 sm:py-12 px-4 sm:px-6 md:px-10 lg:px-16 transition-colors duration-300">
+      <div className="max-w-4xl mx-auto bg-white p-5 sm:p-8 md:p-10 rounded-2xl shadow-lg border border-gray-200">
+        {/* Heading */}
+        <div className="text-center mb-8">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+            Your Success Starts Here!
+          </h3>
+          <p className="text-gray-600 mt-2 max-w-lg mx-auto">
+            Tell us about your goals. We’ll reach out to schedule a free
+            discovery call.
+          </p>
+        </div>
 
+        {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6"
         >
           {/* Full Name */}
           <div className="flex flex-col">
             <label
               htmlFor="fullName"
-              className="text-sm font-medium mb-1 text-gray-700 dark:text-gray-300"
+              className="text-sm font-medium mb-1 text-gray-700"
             >
               Full Name <span className="text-red-500">*</span>
             </label>
@@ -52,7 +56,8 @@ export default function ContactForm() {
               value={form.fullName}
               onChange={handleChange}
               required
-              className="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="John Doe"
+              className="px-4 py-2.5 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -60,7 +65,7 @@ export default function ContactForm() {
           <div className="flex flex-col">
             <label
               htmlFor="company"
-              className="text-sm font-medium mb-1 text-gray-700 dark:text-gray-300"
+              className="text-sm font-medium mb-1 text-gray-700"
             >
               Company / Organization <span className="text-red-500">*</span>
             </label>
@@ -70,51 +75,57 @@ export default function ContactForm() {
               value={form.company}
               onChange={handleChange}
               required
-              className="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="UI Surgeon"
+              className="px-4 py-2.5 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
-          {/* Phone */}
-          <div className="flex flex-col">
-            <label
-              htmlFor="phone"
-              className="text-sm font-medium mb-1 text-gray-700 dark:text-gray-300"
-            >
-              Phone <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="tel"
-              name="phone"
-              value={form.phone}
-              onChange={handleChange}
-              required
-              className="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+          {/* Phone + Company Email (side by side on all screens) */}
+          <div className="grid grid-cols-2 gap-4 md:col-span-2">
+            {/* Phone */}
+            <div className="flex flex-col">
+              <label
+                htmlFor="phone"
+                className="text-sm font-medium mb-1 text-gray-700"
+              >
+                Phone <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
+                required
+                placeholder="Your Phone"
+                className="px-4 py-2.5 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
 
-          {/* Email */}
-          <div className="flex flex-col">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium mb-1 text-gray-700 dark:text-gray-300"
-            >
-              Company Email <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              required
-              className="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+            {/* Company Email */}
+            <div className="flex flex-col">
+              <label
+                htmlFor="email"
+                className="text-sm font-medium mb-1 text-gray-700"
+              >
+                Company Email <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                placeholder="Company email"
+                className="px-4 py-2.5 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
           </div>
 
           {/* Subject */}
           <div className="flex flex-col md:col-span-2">
             <label
               htmlFor="subject"
-              className="text-sm font-medium mb-1 text-gray-700 dark:text-gray-300"
+              className="text-sm font-medium mb-1 text-gray-700"
             >
               Your Subject <span className="text-red-500">*</span>
             </label>
@@ -124,7 +135,8 @@ export default function ContactForm() {
               value={form.subject}
               onChange={handleChange}
               required
-              className="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Website redesign project"
+              className="px-4 py-2.5 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -132,7 +144,7 @@ export default function ContactForm() {
           <div className="flex flex-col md:col-span-2">
             <label
               htmlFor="message"
-              className="text-sm font-medium mb-1 text-gray-700 dark:text-gray-300"
+              className="text-sm font-medium mb-1 text-gray-700"
             >
               Message <span className="text-red-500">*</span>
             </label>
@@ -142,7 +154,8 @@ export default function ContactForm() {
               onChange={handleChange}
               rows={5}
               required
-              className="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Write your message here..."
+              className="px-4 py-2.5 rounded-md border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -150,7 +163,7 @@ export default function ContactForm() {
           <div className="md:col-span-2 text-center">
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-md transition duration-300"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md w-full sm:w-auto transition duration-300"
             >
               Submit Now
             </button>

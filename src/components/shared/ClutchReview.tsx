@@ -1,14 +1,21 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 
 const ClutchReview = () => {
   return (
     <>
-      <Link href={'https://clutch.co/profile/tapplix-applications-web-design'} className="cursor-pointer" target="_blank">
+      <Link
+        href={"https://clutch.co/profile/tapplix-applications-web-design"}
+        className="cursor-pointer"
+        target="_blank"
+      >
         <div className="text-center lg:text-left">
-          <div className="text-gray-700 dark:text-gray-300 font-semibold mb-2 text-sm">Review On</div>
+          <div className="text-gray-700 dark:text-gray-300 font-semibold mb-2 text-sm">
+            Review On
+          </div>
+
+          {/* clutch icon */}
           <div className="flex justify-start items-center gap-2">
             <div>
               <Image
@@ -34,7 +41,7 @@ const ClutchReview = () => {
         </div>
       </Link>
     </>
-  )
-}
+  );
+};
 
-export default ClutchReview
+export default ClutchReview;

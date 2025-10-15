@@ -64,7 +64,7 @@ const Hero = () => {
                   </a>
 
                   {/* Reviewed Brands */}
-                  <div className="flex gap-12 flex-wrap mt-6">
+                  <div className="flex justify-center items-center gap-12 ">
                     {/* Clutch */}
                     <div className="border-r-2 border-neutral-400/50 pr-10 dark:border-neutral-600/50">
                       <ClutchReview />

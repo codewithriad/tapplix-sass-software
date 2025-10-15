@@ -1,16 +1,15 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
-import { Phone, MapPin, Send, ArrowUp } from "lucide-react";
+import { ArrowUp, MapPin, Phone, Send } from "lucide-react";
 import Image from "next/image";
-import ClutchReview from "./ClutchReview";
 import Link from "next/link";
+import ClutchReview from "./ClutchReview";
+import GoogleReview from "./GoogleReview";
 
 const Footer = () => {
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
 
   return (
     <footer className="bg-slate-50 dark:bg-black pt-16 pb-8">
@@ -73,8 +72,9 @@ const Footer = () => {
             </div>
 
             {/* Clutch Review */}
-            <div>
+            <div className="flex justify-center items-center gap-12">
               <ClutchReview />
+              <GoogleReview />
             </div>
           </div>
         </div>
@@ -98,7 +98,10 @@ const Footer = () => {
             </div>
 
             {/* Address */}
-            <Link href={'/contact'} className="flex items-center justify-center md:justify-start space-x-3">
+            <Link
+              href={"/contact"}
+              className="flex items-center justify-center md:justify-start space-x-3"
+            >
               <div className="p-2 bg-blue-100 rounded-full">
                 <MapPin className="h-5 w-5 text-blue-600" />
               </div>
@@ -127,15 +130,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+        {/* copyright Section */}
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Copyright */}
           <div className="text-gray-600 dark:text-white text-sm text-center md:text-left">
             Copyright 2024 <span className="font-semibold">Tapplix</span> |
             Design By <span className="font-semibold">Tapplix</span>
           </div>
-
-
         </div>
 
         {/* Scroll to Top Button */}
